@@ -1,0 +1,52 @@
+[usb] pm3 --> hf 14a raw -akc 6a01c30000
+[usb] pm3 --> nfc type4a read -v
+
+[+] ------------ Capability Container file ------------
+[+]  Version... v2.0 ( 0x20 )
+[+]  Len....... 15 bytes ( 0x0F )
+[+]  Max bytes read  255 bytes ( 0x00FF )
+[+]  Max bytes write 255 bytes ( 0x00FF )
+
+[+]  NDEF file control TLV
+[+]     (t) type of file.... 04
+[+]     (v) ................ 06
+[+]     file id............. E104
+[+]     Max NDEF filesize... 8192 bytes ( 0x2000 )
+[+]     Access rights
+[+]     read   ( 00 ) protection: disabled
+[+]     write  ( FF ) protection: enabled
+[+] 
+[+] ----------------- raw -----------------
+[+] 000F2000FF00FF0406E104200000FF
+
+
+[+] Record 1
+[=] -----------------------------------------------------
+[=] Header info
+[+]   1 ....... Message begin
+[+]    1 ...... Message end
+[+]     0 ..... Chunk flag
+[+]      1 .... Short record bit
+[+]       0 ... ID Len present
+[+] 
+[+]  Header length...... 3
+[+]  Type length........ 39
+[+]  Payload length..... 60
+[+]  ID length.......... 0
+[+]  Type name format... [ 0x02 ] MIME Media Record
+[+]  Record length...... 102
+[=] 
+[=] Payload info
+[=] Type data
+[=]     00: 61 70 70 6C 69 63 61 74 69 6F 6E 2F 76 6E 64 2E | application/vnd.
+[=]     10: 62 6C 75 65 74 6F 6F 74 68 2E 73 65 63 75 72 65 | bluetooth.secure
+[=]     20: 2E 6C 65 2E 6F 6F 62                            | .le.oob
+[=] Payload data
+[=]     00: 3C 00 02 1C 01 11 23 EB 17 C5 EB 7F 2D E9 5F A1 | <.....#.....-._.
+[=]     10: E7 AF C4 4F 4F 0E 2D 11 22 C3 DC D0 A0 1B 9E A3 | ...OO.-.".......
+[=]     20: 0F 86 25 CA 58 82 29 92 FD 09 09 D5 0D 9D 21 89 | ..%.X.).......!.
+[=]     30: 7F 92 AE 08 1B DA 7E 62 4D 20 70 01             | ......~bM p.
+[=] 
+[=] MIME Media Record
+[=] Type............ application/vnd.bluetooth.secure.le.oob
+

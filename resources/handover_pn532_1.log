@@ -1,0 +1,39 @@
+GOT TAG:
+SAK: 20 00100000
+UID: 00010203
+ATQ: 0200
+ATS: 0578807100
+
+SELECT NDEF: 
+    CMD = ISO7816Command(cla=0x00; ins=0xa4; p1=0x04; p2=0x00; lc=7; data=d2760000850101; le=0)
+    RES = ISO7816Response(sw1=0x90; sw2=0x00)
+SELECT NDEF CAPS FILE:
+    CMD = ISO7816Command(cla=0x00; ins=0xa4; p1=0x00; p2=0x0c; lc=2; data=e103; le=0)
+    RES = ISO7816Response(sw1=0x90; sw2=0x00)
+READ NDEF CAPS FILE:
+    CMD = ISO7816Command(cla=0x00; ins=0xb0; p1=0x00; p2=0x00; le=15)
+    RES = ISO7816Response(sw1=0x90; sw2=0x00; data=000f2000ff00ff0406e104200000ff(15))
+SELECT NDEF DATA FILE:
+    CMD = ISO7816Command(cla=0x00; ins=0xa4; p1=0x00; p2=0x0c; lc=2; data=e104; le=0)
+    RES = ISO7816Response(sw1=0x90; sw2=0x00)
+READ NDEF DATA FILE LENGTH: 
+    CMD = ISO7816Command(cla=0x00; ins=0xb0; p1=0x00; p2=0x00; le=2)
+    RES = ISO7816Response(sw1=0x90; sw2=0x00; data=0066(2))
+READ NDEF DATA FILE:
+    CMD = (2 -> 104) ISO7816Command(cla=0x00; ins=0xb0; p1=0x00; p2=0x02; le=102)
+    RES = ISO7816Response(sw1=0x90; sw2=0x00; data=d2273c6170706c69636174696f6e2f766e642e626c7565746f6f74682e7365637572652e6c652e6f6f623c00021c011123c4a5180bf523c0ae5edf6740a697c0ba1122fe745463b20297cc1f94e63725ced9320909e6b4dd25c52c5cbf081bb39dcb7be95001(102))
+
+NDEFRecord(
+  tnf=2,
+  type=6170706c69636174696f6e2f766e642e626c7565746f6f74682e7365637572652e6c652e6f6f62,
+  id=,
+  payload=3c00021c0111234448007cb24c1c81e1a18c9a4246d1091122f917773d6178f04297abbb056b2d2c370909b657c3295fcf569e081bb5b9f351d27501
+)
+
+BLEEIRContainer(
+  ROLE                    : 01                              
+  LE_SC_RANDOM            : c4a5180bf523c0ae5edf6740a697c0ba
+  LE_SC_CONFIRM           : fe745463b20297cc1f94e63725ced932
+  LOCAL_NAME_FULL         : e6b4dd25c52c5cbf                
+  MAC_ADDRESS             : b39dcb7be95001                  
+)
