@@ -6,9 +6,9 @@
 
 # Notes
 
-⚠️GymKit reverse-engineering information presented here is very limited and does not allow to implement the specification. The goal of this document is to provide a starting point for people that plan on researching thi technology, in order to save their time and help with collaboration.
+⚠️GymKit reverse-engineering information presented here is very limited and does not allow to implement the specification. The goal of this document is to provide a starting point for people that plan on researching this technology, in order to save their time and help with collaboration.
 
-Protocol research has stopped at the BLE pairing part as I wasn't able to implement proper pairing. Further research after that might require one to have real hardware samples in order to look at BLE communication and find out what data needs to be sent and received.
+Protocol research stopped at the BLE pairing step as I wasn't able to implement proper pairing. Further research after that might require one to have real hardware samples in order to look at BLE communication and find out what data needs to be sent and received.
 
 # Overview
 
